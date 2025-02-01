@@ -17,4 +17,5 @@ export const ListaContainer = styled.main`
   padding: 20px 40px;
   height: 100vh;
   overflow-y: scroll;
+  background-color: #e8e8e8;
 `;

@@ -1,12 +1,18 @@
-import { GiThreeFriends } from "react-icons/gi";
 import { ContainerFiltroCard } from "./styles";
+import { IconType } from "react-icons"
 
-const FiltroCard = () => {
+type Props = {
+  icon: IconType;
+  titulo: string;
+  contador: number;
+};
+
+const FiltroCard = ({ icon: Icon, titulo, contador }: Props) => {
   return (
     <ContainerFiltroCard>
-      <GiThreeFriends size={30} />
-      <p>Amigos</p>
-      <p>5</p>
+      <Icon size={30} />
+      <p>{titulo}</p>
+      <p>{contador}</p>
     </ContainerFiltroCard>
   );
 };

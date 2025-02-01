@@ -24,6 +24,6 @@ export const Botao = styled.button`
 export const Filtros = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 8px;
+  grid-gap: 12px;
   margin-top: 16px;
 `;
