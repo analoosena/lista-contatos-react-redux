@@ -20,6 +20,10 @@ export const Botao = styled.button`
   margin-bottom: 24px;
   width: 80%;
   font-family:"Liter", serif;
+  &:hover{
+    color: #fff;
+    font-weight: bold;
+  }
 `
 export const Filtros = styled.div`
   display: grid;

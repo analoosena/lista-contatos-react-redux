@@ -8,17 +8,18 @@ import FiltroCard from "../../components/FiltroCard";
 import { Botao, ContainerBarra, Filtros } from "./styles";
 
 const BarraLateral = () => {
+  
   return (
     <ContainerBarra>
-      <img src="src\assets\Connect.png" alt="" />
+      <img src="src\assets\Connect.png" alt="Logo Connect hub" />
       <Botao>Novo Contato</Botao>
       <Filtros>
-        <FiltroCard icon={GiThreeFriends} titulo="Amigos" contador={5} />
-        <FiltroCard icon={MdOutlineWork} titulo="Trabalho" contador={2} />
-        <FiltroCard icon={PiHouseBold} titulo="Família" contador={8} />
-        <FiltroCard icon={TbSos} titulo="Emergência" contador={1} />
-        <FiltroCard icon={FaStar} titulo="Favoritos" contador={8} />
-        <FiltroCard icon={GrEmergency} titulo="Todos" contador={20} />
+        <FiltroCard icon={GiThreeFriends} titulo="Amigos" grupo="amigos" />
+        <FiltroCard icon={MdOutlineWork} titulo="Trabalho" grupo="trabalho" />
+        <FiltroCard icon={PiHouseBold} titulo="Família" grupo="familia" />
+        <FiltroCard icon={TbSos} titulo="Emergência" grupo="emergencia" />
+        <FiltroCard icon={FaStar} titulo="Favoritos" grupo="favoritos" />
+        <FiltroCard icon={GrEmergency} titulo="Todos" grupo="todos" />
       </Filtros>
     </ContainerBarra>
   );

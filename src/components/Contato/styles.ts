@@ -7,36 +7,31 @@ export const ContainerContato = styled.div`
   gap: 24px;
   align-items: center;
   justify-content: space-between;
-  h5{
+  h5 {
     font-size: 16px;
     font-weight: 400;
   }
-  p{
+  p {
     font-weight: 300;
     font-size: 12px;
   }
-`;
-export const IconAvatar = styled.div`
-  width: 50px;
-  height: 50px;
-  background-color: #000;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  svg {
-    color: #fad02c;
-    font-size: 30px;
+  select,
+  input {
+    border-radius: 5px;
+    font-family: "Roboto Mono", serif;
+    border: none;
+    outline: none;
+    padding: 2px;
+    &:focus {
+      border: #fad02c solid 2px;
+    }
   }
 `;
 
-export const Botoes = styled.div `
+export const Botoes = styled.div`
   display: flex;
   gap: 8px;
-`
+`;
 export const BotaoAcao = styled.button`
   background-color: transparent;
   cursor: pointer;
