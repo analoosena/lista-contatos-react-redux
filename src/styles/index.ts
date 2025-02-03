@@ -86,10 +86,12 @@ export const ContainerContatoNv = styled.div`
     font-size: 24px;
   }
   form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 16px;
-    margin-bottom: 16px;
+    div {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 16px;
+      margin-bottom: 16px;
+    }
   }
   input {
     border-bottom: 1px solid #000;
@@ -104,7 +106,8 @@ export const ContainerContatoNv = styled.div`
       border-bottom: ${variaveis.amarelo} solid 3px;
     }
   }
-  label, option{
+  label,
+  option {
     font-size: 14px;
     padding-right: 8px;
     color: ${variaveis.marrom};
