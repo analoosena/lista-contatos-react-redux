@@ -14,9 +14,9 @@ import { MdDownloadDone } from "react-icons/md";
 import NovoContato from "../../models/NovoContato";
 import { editarContato, removerContato } from "../../redux/reducers/lista";
 
-import { BotaoAcao, Botoes, ContainerContato } from "./styles";
+import { BotaoAcao, Botoes } from "./styles";
 import { useState } from "react";
-import { IconAvatarYellow } from "../../styles";
+import { ContainerContato, IconAvatarYellow } from "../../styles";
 
 type Props = NovoContato;
 

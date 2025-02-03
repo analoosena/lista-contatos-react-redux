@@ -45,5 +45,5 @@ const listaSlice = createSlice({
     },
   },
 });
-export const { removerContato, editarContato } = listaSlice.actions;
+export const { removerContato, editarContato, adicionarContato } = listaSlice.actions;
 export default listaSlice.reducer;
