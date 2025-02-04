@@ -76,7 +76,7 @@ const Contato = ({ nomeCompleto, telefone, email, grupo, id }: Props) => {
       {estaEditando ? (
         <>
           <div>
-            <IconAvatarYellow>{mudaIcon(grupoEditado)}</IconAvatarYellow>
+            <IconAvatarYellow ativo={true} >{mudaIcon(grupoEditado)}</IconAvatarYellow>
           </div>
           <select
             value={grupoEditado}
@@ -116,7 +116,7 @@ const Contato = ({ nomeCompleto, telefone, email, grupo, id }: Props) => {
       ) : (
         <>
           <div>
-            <IconAvatarYellow>{mudaIcon(grupo)}</IconAvatarYellow>
+            <IconAvatarYellow ativo={true} >{mudaIcon(grupo)}</IconAvatarYellow>
           </div>
           <h5>{nomeCompleto}</h5>
           <p>{telefone}</p>
